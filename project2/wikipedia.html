@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .mdiv{
+            height: 100vh;
+            width: 100%;
+            background-image: url(https://masterbundles.com/wp-content/uploads/2023/01/fashionable-sunglasses-patterns-1--6.jpg);
+            position: relative;
+            background-size: cover;
+        }
+        .md1{
+            height: 622px;
+            width: 900px;
+            /* border: 3px solid black ; */
+            left:312px;
+           position: fixed;
+           top: 85px;
+           background-color:transparent;
+        
+           border-radius: 50px;
+           
+           
+        }
+        .md2{
+            height: 366px;
+            width: 314px;
+            /* background-color: rgb(217, 218, 219); */
+            
+            left: 44px;
+            top:101px;
+            position:relative;
+            border-radius:50%;
+            
+          
+        }
+        .md3{
+            height: 516px;
+            width: 390px;
+            border: 3px solid black;
+            position: relative;
+            left: 250px;
+            top: -319px;
+            border-radius: 50px;
+            backdrop-filter: 100px;
+            backdrop-filter: blur(10px);
+           
+        }
+          
+        .image{
+         margin-top: 0px;
+         margin-left: 5px;
+         height: 300px;
+         width: 300px;
+         border-radius: 100%;
+        }
+        h2{
+            text-align: center;
+            font-family: arial black;
+            color: rgb(47, 45, 45);
+            font-size: 30PX;
+        }
+        input{
+            height: 50px;
+            width: 300px;
+            border-radius: 50px;
+            margin-top: 30px;
+            margin-left: 50px;
+            font-size: 9px;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        .new:hover{
+            /* background-color: rgb(19, 138, 198);
+            border: 2px solid black; */
+            background-color: rgb(88, 86, 86);
+    color: rgb(140, 34, 179);
+    border: 2px solid blue;
+    box-shadow: 0px 0px 10px royalblue;
+    transform: scale(1.1);
+            
+
+        }
+      
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="mdiv">
+        <div  class="md1">
+            <div class="md2">
+              
+            </div>
+            <div class="md3">
+                <h2>Login</h2>
+                
+                <input type="text" name="username" id="uname" placeholder="ENTER YOUR USERNAME" height="50px"><br>
+                <input type="password" name="password" id="password" placeholder="ENTER YOUR PASSWORD"><br>
+                <input type="text" name="password" placeholder="ENTER YOUR NUMBER"><br>
+                <input type="text" name="email" placeholder="ENTER YOUR  EMAIL"><br>
+                <!-- <input type="text" name="password" placeholder="ADDRESS"><br> -->
+                <input type="button" name="button" value="REGISTER" class="new">
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+
+    <script>
+        let un1= document.getElementById("uname").value;
+        let pwd1=document.getElementById("password").value;
+        function loginSubmit()
+        {
+        let un2=document.getElementById("uname").value;
+        let pwd2=document.getElementById("password").value;
+        if(un1==un2 && pwd1==pwd2)
+        {
+            open(index.html);
+        }
+        else
+        {
+            alert("Incorrect Credentials");
+        }
+        }
+
+    </script>
+    
+</body>
+</html>

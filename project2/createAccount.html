@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+           box-sizing: border-box;
+         } 
+
+         body {
+               justify-content: center;
+               align-items: center;
+                
+              }
+        .head{
+            
+            height: 85px;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: -18px;
+       
+        }
+      .head2{
+        
+        height: auto;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 2px;
+        background-color: white;
+        border-radius: 50px;
+        border: 2px solid gray;
+        transition-duration: 1s;
+      }
+      .head2:hover{
+        box-shadow: 0px 0px 10px gray;
+        transform:scale(1.1);
+        background-color: aliceblue;
+
+      }
+       h2{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: red;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 50px;
+      }
+      label
+      {
+         font-size: larger;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-weight: bolder;
+
+      }
+      .un{
+        border-radius: 10%;
+        height: 30px;
+        
+      }
+      .tracking-in-expand{
+        font-size: 24px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      @-webkit-keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+      .tracking-in-expand-fwd-top {
+	-webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+   .button
+   {
+    border: none;
+    outline: none;
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(100, 95, 95);
+  text-align: center;
+  background-color: rgb(52, 152, 182);
+  font-weight: bolder;
+  color: rgb(14, 13, 13);
+  transition-duration: 1s;
+
+}
+.button:hover{
+    background-color: white;
+    color: rgb(49, 34, 179);
+    border: 2px solid blue;
+    box-shadow: 0px 0px 10px royalblue;
+    transform: scale(1.1);
+}
+body{
+    background-image: url();
+    background-repeat:no-repeat;
+    background-size:800px;
+    width: 100%;
+    height: 500px;
+}
+.head2
+{
+  height: 500px;
+  width: 500px;
+ margin-left: 72  0px;
+}
+
+input
+{
+  text-align: center;
+}
+
+
+
+    </style>
+</head>
+<body >
+    <div class="color-change-2x">
+        <img src="" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Ray-Ban_logo.svg/1200px-Ray-Ban_logo.svg.png" height="50px" width="100px">
+        <br>
+        <br>
+        <br>
+        <div class="head"> <h2 class="tracking-in-expand-fwd-top" align="center">Create an Account</h2></div>
+       
+        <div>
+            <div class="head2" >
+    <form action="servlet page" method="post">
+        
+        <lable class="tracking-in-expand" for="uname">First Name<span style="color: red;">*&nbsp;</span></lable>
+        <input style="border: none;" type="text" name="username" id="uname" placeholder="enter your first name" required class="un" ><br /><br />
+        <lable class="tracking-in-expand" for="uname2">Last Name<span style="color: red;">*&nbsp;</span></lable>
+        <input style="border: none;" type="text" name="username" id="uname2" placeholder="enter your last name" required class="un" /><br /><br />
+        <lable class="tracking-in-expand" for="mail">Email<span style="color: red;">* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></lable>
+        <input style="border: none;" type="text" name="username" id="mail" placeholder="enter your email id" required class="un"/><br /><br />
+        <lable class="tracking-in-expand" for="pass">Password<span style="color: red;">*&nbsp;&nbsp;</span></lable>
+        <input style="border: none;" type="password" name="password" id="pass" placeholder="set your password" required class="un"/><br/><br/>
+        <input type="checkbox" required/>By creating this account , you agree to our <a href="policy.html">Privacy Policy</a><br /><br />
+        
+       <a href="index.html" target="_parent"> 
+        <input class="button"   type="submit" value="Submit" onclick="loginSubmit()"   ></a>
+        
+    
+
+    </form>
+        </div>
+</div>
+    </div>
+    <script type="text/javasript">
+        let firstName= document.getElementById("uname")
+    </script>
+</body>
+</html>

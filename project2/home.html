@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>Rayban</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<!-- <link rel="shortcut icon" href="css/images/favicon.ico" /> -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="icon" href="data:image/png;base64,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">
+	<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+	<script src="js/jquery.jcarousel.js" type="text/javascript"></script>
+	<script src="js/DD_belatedPNG-min.js" type="text/javascript"></script>
+	<script src="js/cufon-yui.js" type="text/javascript"></script>	
+	<script src="js/Tahoma_400-Tahoma_700.font.js" type="text/javascript"></script>
+	<script src="js/functions.js" type="text/javascript"></script>		
+
+	<style>
+		.logo
+		{
+			margin-top: 40px;
+			height: 100px;
+			/* width: 200px; */
+			margin-left: -80px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<div class="shell">
+			<!-- Header -->
+			<div id="header">
+				<!-- Logo -->
+				<div>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbSyG51-Qw_3ZcoV7fY2EYLlrqpaR9kH92twsqpFUZg&s" alt="" class="logo">
+				</div>
+				<!-- Navigation -->
+				<div id="navigation">
+					<ul >
+						<li class=""><a title="Home" href="home.html">Home<span></span></a></li>
+						<li><a title="Catalog" href="catalog.html">Catalog<span></span></a></li>
+						<li><a title="gift card" href="GIFT CARD.HTML">GIFT CARD<span></span></a></li>
+						<li><a title=" About Us" href="wikipedia.html">LOGIN<span></span></a></li>
+					</ul>
+				</div>
+				<!-- END Navigation -->
+				<div class="cl"></div>
+				<div id="cart">
+					<p><a title="shopping bag" href="#">shopping bag:&nbsp; 0 items</a></p>
+				</div>
+			</div>	
+		</div>
+		<!-- END Header -->
+		<!-- Main -->
+		<div id="main">
+			<!-- Slider Holder -->
+			<div id="slider-holder">
+				<div class="shell">
+					<!-- Main Slider -->
+					<div id="slider">
+						<a title="Details" class="main-button" href="#">view product</a>					
+						<ul>
+							<li>
+								<img src="https://img.freepik.com/premium-photo/woman-wearing-glasses-suit-with-shirt-that-says-she-is-wearing-glasses_973047-5874.jpg" height="360px" alt="A girl with sun glasses" />
+								<div class="caption">
+									<h2>“Sunglasses ”</h2>
+									<h3>are like eye shadow </h3>
+									<p>they make everything look prettier and younger.” </p> 
+								</div>
+								<div class="cl"></div>
+							</li>
+							<li>
+								<img src="https://cutewallpaper.org/21/dua-lipa-wallpapers/Dua-Lipa-Wallpapers-High-Quality-Download-Free.jpg" height="360px" width="500px" alt="A man with sun glasses" />
+								<div class="caption">
+									 <h2>Some  Here </h2>
+									<h3>Sed nec mi et nisi pulvinar egestas</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum metus in turpis dapibus non dictum justo imperdiet. </p> 
+								</div>
+								<div class="cl"></div>
+							</li>
+							<li>
+								<img src="https://c0.wallpaperflare.com/preview/751/920/976/beautiful-woman-brunette-close-up-coffee-shop.jpg"      height="400px" width="480px"     alt="A man with sun glasses" />
+								<div class="caption">
+									<h2>Some Tittle Gose Here </h2>
+									<h3>Sed nec mi et nisi pulvinar egestas</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum metus in turpis dapibus non dictum justo imperdiet. </p>
+								</div>
+								<div class="cl"></div>
+							</li>
+						</ul>
+						<div id="slider-nav">
+							<a title="slide 1" href="#">1<span class="fade"></span><span class="active"></span><img src="https://img.freepik.com/premium-photo/woman-wearing-glasses-suit-with-shirt-that-says-she-is-wearing-glasses_973047-5874.jpg" alt="A young man with sun glasses" /></a>
+							<a title="slide 2" href="#">2<span class="fade"></span><span class="active"></span><img src="https://cutewallpaper.org/21/dua-lipa-wallpapers/Dua-Lipa-Wallpapers-High-Quality-Download-Free.jpg" alt="A young woman with sun glasses" /></a>
+							<a title="slide 3" href="#">3<span class="fade"></span><span class="active"></span><img src="https://c0.wallpaperflare.com/preview/751/920/976/beautiful-woman-brunette-close-up-coffee-shop.jpg" alt="A little girl with curly hair and sun glasses" /></a>
+						</div>						
+					</div>
+					<!-- END Main Slider -->								
+				</div>	
+			</div>
+			<!-- END Slider Holder -->
+			<!-- Featured Items -->
+			<div class="items">
+				<div class="shell">
+					<h4>Featured Items</h4>
+					<!-- <div class="shop-by">
+						<ul>
+							<li>Shop by:</li>
+							<li><a title="men" href="#">men</a></li>
+							<li><a title="woman" href="#">woman</a></li>
+							<li><a title="children" href="#">children</a></li>							
+						</ul>		
+					</div> -->
+					<!-- Products -->
+					<div class="products">
+						<div class="product-frame">
+							<div class="product">
+								<a title="View product" class="view-button" href="#">view product</a>
+								<div class="img-holder">	
+									<a title="View product" href="#"><img src="css/images/1.jpg" alt="Images of sunglasses" /></a>
+								</div>								
+								<div class="img-bottom"></div>
+								<div class="price-box">
+									<p>price</p>
+									<p class="price"><span class="dollar">₹</span>1000<sup>.99</sup></p>
+								</div>
+								<div class="product-entry">
+									<p class="model">Sunglasses<br /> Model</p>
+									<p class="model"><span>product: 48</span></p>
+									<p class="product-info">Sed at fringilla est. Donec ac mi augue. Mauris id sem at felis sollicitudin sollicitudin. Integer lorem tortor, porttitor vitae porta ut, auctor 	at urna. In convallis...</p>
+								</div>
+							</div>
+						</div>
+						<div class="product-frame">
+							<div class="product">
+								<a title="View product" class="view-button" href="#">view product</a>
+								<div class="img-holder">	
+									<a title="View product" href="#"><img src="css/images/2.jpg" alt="Images of sunglasses" /></a>
+								</div>								
+								<div class="img-bottom"></div>
+								<div class="price-box">
+									<p>price</p>
+									<p class="price"><span class="dollar">₹</span>2000<sup>.99</sup></p>
+								</div>
+								<div class="product-entry">
+									<p class="model">Sunglasses<br /> Model</p>
+									<p class="model"><span>product: 57</span></p>
+									<p class="product-info">Sed at fringilla est. Donec ac mi augue. Mauris id sem at felis sollicitudin sollicitudin. Integer lorem tortor, porttitor vitae porta ut, auctor 	at urna. In convallis...</p>
+								</div>
+							</div>
+						</div>
+						<div class="product-frame">
+							<div class="product">
+								<a title="View product" class="view-button" href="#">view product</a>
+								<div class="img-holder">	
+									<a title="View product" href="#"><img src="css/images/3.jpg" alt="Images of sunglasses" /></a>
+								</div>								
+								<div class="img-bottom"></div>
+								<div class="price-box">
+									<p>price</p>
+									<p class="price"><span class="dollar">₹</span>2400<sup>.99</sup></p>
+								</div>
+								<div class="product-entry">
+									<p class="model">Sunglasses<br /> Model</p>
+									<p class="model"><span>product: 99</span></p>
+									<p class="product-info">Sed at fringilla est. Donec ac mi augue. Mauris id sem at felis sollicitudin sollicitudin. Integer lorem tortor, porttitor vitae porta ut, auctor 	at urna. In convallis...</p>
+								</div>
+							</div>
+						</div>
+						<div class="product-frame">
+							<div class="product">
+								<a title="View product" class="view-button" href="#">view product</a>
+								<div class="img-holder">	
+									<a title="View product" href="#"><img src="css/images/4.jpg" alt="Images of sunglasses" /></a>
+								</div>								
+								<div class="img-bottom"></div>
+								<div class="price-box">
+									<p>price</p>
+									<p class="price"><span class="dollar">₹</span>8400<sup>.99</sup></p>
+								</div>
+								<div class="product-entry">
+									<p class="model">Sunglasses<br /> Model</p>
+									<p class="model"><span>product: 66</span></p>
+									<p class="product-info">Sed at fringilla est. Donec ac mi augue. Mauris id sem at felis sollicitudin sollicitudin. Integer lorem tortor, porttitor vitae porta ut, auctor 	at urna. In convallis...</p>
+								</div>
+							</div>
+						</div>
+						<div class="product-frame">
+							<div class="product">
+								<a title="View product" class="view-button" href="#">view product</a>
+								<div class="img-holder">	
+									<a title="View product" href="#"><img src="css/images/5.jpg" alt="Images of sunglasses" /></a>
+								</div>								
+								<div class="img-bottom"></div>
+								<div class="price-box">
+									<p>price</p>
+									<p class="price"><span class="dollar">₹</span>1990<sup>.99</sup></p>
+								</div>
+								<div class="product-entry">
+									<p class="model">Sunglasses<br /> Model</p>
+									<p class="model"><span>product: 12</span></p>
+									<p class="product-info">Sed at fringilla est. Donec ac mi augue. Mauris id sem at felis sollicitudin sollicitudin. Integer lorem tortor, porttitor vitae porta ut, auctor 	at urna. In convallis...</p>
+								</div>
+							</div>
+						</div>
+						<div class="product-frame">
+							<div class="product">
+								<a title="View product" class="view-button" href="#">view product</a>
+								<div class="img-holder">	
+									<a title="View product" href="#"><img src="css/images/6.jpg" alt="Images of sunglasses" /></a>
+								</div>								
+								<div class="img-bottom"></div>
+								<div class="price-box">
+									<p>price</p>
+									<p class="price"><span class="dollar">₹</span>2840<sup>.99</sup></p>
+								</div>
+								<div class="product-entry">
+									<p class="model">Sunglasses<br /> Model</p>
+									<p class="model"><span>product: 76</span></p>
+									<p class="product-info">Sed at fringilla est. Donec ac mi augue. Mauris id sem at felis sollicitudin sollicitudin. Integer lorem tortor, porttitor vitae porta ut, auctor 	at urna. In convallis...</p>
+								</div>
+							</div>
+						</div>
+						<div class="cl"></div>
+					</div>
+					<!-- END Products -->
+				</div>
+			</div>
+			<!-- END Featured Items -->
+			<!-- Bestsellers -->
+			<div class="items">
+				<div class="shell">
+					<h4>Best Sellers</h4>
+					<div class="products-slider">
+						<ul>
+							<li>
+								<div class="product">
+									<div class="img-holder">	
+										<a title="View product" href="#"><img src="css/images/item1.jpg" alt="" /></a>
+									</div>								
+									<div class="img-bottom"></div>
+									<div class="price-box">
+										<p>price</p>
+										<p class="price"><span class="dollar">₹</span>4400<sup>.99</sup></p>
+									</div>
+									<div class="product-entry">
+										<p class="model">Sunglasses<br /> Model</p>
+										<p class="model"><span>product: 76</span></p>									
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product">
+									<div class="img-holder">	
+										<a title="View product" href="#"><img src="css/images/item2.jpg" alt="" /></a>
+									</div>								
+									<div class="img-bottom"></div>
+									<div class="price-box">
+										<p>price</p>
+										<p class="price"><span class="dollar">₹</span>2900<sup>.99</sup></p>
+									</div>
+									<div class="product-entry">
+										<p class="model">Sunglasses<br /> Model</p>
+										<p class="model"><span>product: 76</span></p>									
+									</div> 
+								</div>
+							</li>
+							<li>
+								<div class="product">
+									<div class="img-holder">	
+										<a title="View product" href="#"><img src="css/images/item3.jpg" alt="Images of sunglasses" /></a>
+									</div>								
+									<div class="img-bottom"></div>
+									<div class="price-box">
+										<p>price</p>
+										<p class="price"><span class="dollar">₹</span>2840<sup>.99</sup></p>
+									</div>
+									<div class="product-entry">
+										<p class="model">Sunglasses<br /> Model</p>
+										<p class="model"><span>product: 76</span></p>									
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product">
+									<div class="img-holder">	
+										<a title="View product" href="#"><img src="css/images/item4.jpg" alt="Images of sunglasses" /></a>
+									</div>								
+									<div class="img-bottom"></div>
+									<div class="price-box">
+										<p>price</p>
+										<p class="price"><span class="dollar">₹</span>4999<sup>.99</sup></p>
+									</div>
+									<div class="product-entry">
+										<p class="model">Sunglasses<br /> Model</p>
+										<p class="model"><span>product: 76</span></p>									
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product">
+									<div class="img-holder">	
+										<a title="View product" href="#"><img src="css/images/item1.jpg" alt="Images of sunglasses" /></a>
+									</div>								
+									<div class="img-bottom"></div>
+									<div class="price-box">
+										<p>price</p>
+										<p class="price"><span class="dollar">₹</span>3999<sup>.99</sup></p>
+									</div>
+									<div class="product-entry">
+										<p class="model">Sunglasses<br /> Model</p>
+										<p class="model"><span>product: 76</span></p>									
+									</div> 
+								</div>
+							</li>
+							<li>
+								<div class="product">
+									<div class="img-holder">	
+										<a title="View product" href="#"><img src="css/images/item2.jpg" alt="Images of sunglasses" /></a>
+									</div>								
+									<div class="img-bottom"></div>
+									<div class="price-box">
+										<p>price</p>
+										<p class="price"><span class="dollar">₹</span>5999<sup>.99</sup></p>
+									</div>
+									<div class="product-entry">
+										<p class="model">Sunglasses<br /> Model</p>
+										<p class="model"><span>product: 76</span></p>									
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="product">
+									<div class="img-holder">	
+										<a title="View product" href="#"><img src="css/images/item3.jpg" alt="Images of sunglasses" /></a>
+									</div>								
+									<div class="img-bottom"></div>
+									<div class="price-box">
+										<p>price</p>
+										<p class="price"><span class="dollar">₹</span>2499<sup>.99</sup></p>
+									</div>
+									<div class="product-entry">
+										<p class="model">Sunglasses<br /> Model</p>
+										<p class="model"><span>product: 76</span></p>									
+									</div>
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>	
+			</div>	
+			<!-- END Bestsellers -->		
+			<div class="columns">
+				<div class="shell">
+					<div class="post">
+						<div class="col about">
+								<!-- <p class="heading">about sunglasses</p>
+								<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur in sem mauris. Etiam nec ipsum a est facilisis fermentum mollis congue nibh. Proin porta pharetra mauris ac facilisis. Donec elementum imperdiet ante vel malesuada.</p>
+								<a title="Read more" href="#">&raquo;&nbsp;read more</a> -->
+						<!-- </div>
+						<div class="col categories">
+							<p class="heading">categories</p>
+							<ul>
+								<li><a title="Men sunglasses" href="#">Men</a></li>
+								<li><a title="Women sunglasses" href="#">Women</a></li>
+								<li><a title="Children sunglasses" href="#">Childern</a></li>						
+							</ul>
+						</div> -->
+						<!-- <div class="col info">
+							<p class="heading">informations</p>
+							<ul class="first">
+								<li><a title="Shopping Bag" href="#">Shopping Bag</a></li>
+								<li><a title="Returns" href="#">Returns</a></li>
+								<li><a title="Search" href="#">Search</a></li>						
+							</ul>
+							<ul>
+								<li><a title="About Us" href="#">About Us</a></li>
+								<li><a title=" Terms Of Service" href="#"> Terms Of Service</a></li>
+								<li><a title="Privacy Policy" href="#">Privacy Policy</a></li>						
+							</ul>
+						</div> -->
+						<div class="cl"></div>
+					</div>						
+				</div>					
+			</div>			
+		</div>
+		<!-- END Main  -->
+		<div id="footer-push"></div>
+	</div>
+	<!-- END Wrapper -->
+	<!-- Footer -->
+	<div id="footer">
+		<div class="shell">
+			<div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbSyG51-Qw_3ZcoV7fY2EYLlrqpaR9kH92twsqpFUZg&s" alt="" height="20px"></div>
+			<!-- <p><pre>493 BUILDING STORE 
+				PASHIM PURI,NEW DELHI PINCODE:110063
+			</pre>	
+			</p> -->
+			<div class="cl"></div>
+		</div>
+	</div>
+	<!-- END Footer -->
+</body>	
+</html>
